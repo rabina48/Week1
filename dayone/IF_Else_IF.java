@@ -1,4 +1,4 @@
-package Day1;
+package dayone;
 
 class If_Else_IF {
 

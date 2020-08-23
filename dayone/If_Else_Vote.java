@@ -1,5 +1,6 @@
-package Day1;
+package dayone;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class If_Else_Vote {
@@ -19,7 +20,7 @@ public class If_Else_Vote {
 
         int age;
         String name;
-        String Vote;
+        String vote;
 
 
         Scanner sc = new Scanner(System.in);
@@ -36,14 +37,19 @@ public class If_Else_Vote {
 
             Scanner sc2 = new Scanner(System.in);
             System.out.println(" Vote any one = java , python , Ruby");
-            Vote = sc2.next();
+            vote = sc2.next();
+            Arrays.asList("java" , "python" , "Ruby").contains(vote);
+          //  OR
+
+            if( vote.equals("Ruby") || vote.equals("java") || vote.equals("python")){
+                System.out.println("Your vote is Recorded");
+            } else{
+                System.out.println("Invalid!");
+            }
 
             }
-//            if( Vote == "Ruby","java","python"){
-//                System.out.println("Your vote is Recorded");
-//               } else{
-//                 System.out.println("Invalid!");
-//             }
+
+
 
 //        else(age< 18){
 //            System.out.println("you cannot vote");

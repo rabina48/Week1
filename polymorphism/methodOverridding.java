@@ -1,23 +1,23 @@
 package polymorphism;
- // Base class
+
+// Base class
 public class methodOverridding {
     public void show() {
         System.out.println("This is parent class ");
     }
+
+
+    public static void main(String args[]) {
+        methodOverridding ob = new child();
+        ob.show();
+    }
 }
 
-    class child extends  methodOverloading {
+class child extends methodOverridding {
 
-        public void show() {
-            System.out.println("This is child class");
-        }
-
-
-
-        public  static  void main(String args[]){
-        methodOverloading ob = new child();
-        ob.show();
-        }
+    public void show() {
+        System.out.println("This is child class");
     }
+}
 
 

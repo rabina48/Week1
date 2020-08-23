@@ -1,4 +1,4 @@
-package Day1;
+package dayone;
 
 public class Data_Types_Primitive {
 
@@ -22,23 +22,29 @@ public class Data_Types_Primitive {
             long numbe = 12332252626L; //L need to define
             System.out.println("\n");
             System.out.println(numbe);
-
-            //float: Sufficient for holding 6 to 7 decimal digits
-            //size: 4 bytes
-
-            float r = 9.8689f;
-            System.out.println("\n");
-            System.out.println(r);
-
-            //boolean
-            boolean b = false;
-            System.out.println(b);
-
-            //char
-            char ch = 'Z';
-            System.out.println(ch);
-
-            //Float Literals
+//
+//            //float: Sufficient for holding 6 to 7 decimal digits
+//            //size: 4 bytes
+//
+//            float r = 9.8689f;
+//            System.out.println("\n");
+//            System.out.println(r);
+//
+//            //boolean vs Boolean
+//            boolean b= false;//default false
+//            System.out.println(b);
+//            //auto boxing, onboxing
+//          //naming convetion
+//            Boolean b1 = true;
+//            b=b1;
+//            b1.
+//
+//
+//            //char
+//            char ch = 'Z';
+//            System.out.println(ch);
+//
+//            //Float Literals
 
             int ra = 12345;
             float rab =1.235f;//Note: Always suffix float value with the “f” else compiler will consider it as double.

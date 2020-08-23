@@ -1,16 +1,24 @@
 package constructor.examples;
+class Person{
 
-class Employee
+    String name;
+    String address;
+
+    void display() {
+        System.out.println(" Name=> "+name);
+     //   System.out.println("Employee Salary: "+empSalary);
+        System.out.println(" Address => "+address);
+    }
+
+}
+class Employee extends  Person
 {
-     String empName;
      int empSalary;
-     String address;
-
     //default constructor of the class
     public Employee()
     {
         //this will call the constructor with String param
-        this("rabina");
+        this("rabina");// constructor invoked
     }
 
     public Employee(String name)
@@ -22,23 +30,29 @@ class Employee
     {
         //call the constructor with (String, int, String) param
         this(name, sal, "Delhi");
+
     }
     public Employee(String name, int sal, String addr)
     {
-        this.empName=name;
+        this.name=name;
         this.empSalary=sal;
         this.address=addr;
     }
+@Override // anotation
+    void display() {
+        //System.out.println("Employee Name: "+name);
+        super.display();
+        System.out.println("Salary=> "+empSalary);
+        //System.out.println("Employee Address: "+address);
+   }
 
-    void disp() {
-        System.out.println("Employee Name: "+empName);
-        System.out.println("Employee Salary: "+empSalary);
-        System.out.println("Employee Address: "+address);
-    }
+   void show(){
+
+   }
     public static void main(String[] args)
     {
-        Employee obj = new Employee();
-        obj.disp();
+        Person obj = new Employee();
+        obj.display();
     }
 }
 

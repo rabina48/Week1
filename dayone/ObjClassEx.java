@@ -1,4 +1,4 @@
-package Day1;
+package dayone;
 //object and class
 public class ObjClassEx {
     //fields (or instance variable)

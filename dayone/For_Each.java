@@ -1,4 +1,4 @@
-package Day1;
+package dayone;
 //for(data_type variable : array | collection){
 ////body of for-each loop
 //}

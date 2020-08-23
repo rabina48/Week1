@@ -4,8 +4,8 @@ public class University {
     String universityName;
     String address;
 
-    University(String name, String address){
-        this.universityName = name;
+    University(String universityName, String address){
+        this.universityName = universityName;
         this.address = address;
     }
 
@@ -19,44 +19,43 @@ public class University {
 
 }
 
-class Department{
+class Department {
     String departName;
     int blockNo;
 
-    Department(String name, int blockNo){
+    Department(String name, int blockNo) {
         this.departName = name;
         this.blockNo = blockNo;
 
     }
 
 
-    private String getDepartName(){
+    public String getDepartName() {
 
-        return  departName;
+        return departName;
     }
 
-    public  int  getBlockNo(){
+    public int getBlockNo() {
         return getBlockNo();
     }
 
 
-//    class getLab{
-//
-//
-//
+//    void display() {
+//        System.out.println(getDepartName() + "is in " + getBlockNo());
 //    }
-
- public static void main (String[] args) {
-     University university = new University("KU", "Dhulikhel");
-     Department department = new Department("Computer",9);
+public static void main (String[] args) {
+    University university = new University("KU", "Dhulikhel");
+    Department department = new Department("Computer",9);
+    // department.display(); /// What could be the Error here?
 
     // System.out.println(university.getUniversityName()+"is in "+university.getUniversityAddress()+"and "+department.getDepartName()+"Department is in Block "+department.getBlockNo()+"ok");
 
-     System.out.println(university.getUniversityName()+" is in "+university.getUniversityAddress()+" and "+department.getDepartName()+" Department is in Block ");
+    System.out.println(university.getUniversityName()+" is in "+university.getUniversityAddress()+" and "+department.getDepartName()+" Department is in Block ");
 // not able to call by obj
 
- }
- }
+}
+}
+
 
 
 
